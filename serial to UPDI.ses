@@ -1,0 +1,194 @@
+
+(session "serial to UPDI.ses"
+  (base_design "serial to UPDI.dsn")
+  (placement
+    (resolution um 10)
+    (component "fenil:PinHeader_1x05_P2.54mm_Vertical SPDT_f"
+      (place SW1 1497838 -1093266 front 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place J1 1397762 -997354 front 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
+      (place J3 1594358 -1172718 front 180)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+      (place R1 1455674 -1027226 front 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical::1
+      (place J2 1397508 -1096264 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(6.0.7)")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(J1-Pad1)"
+        (wire
+          (path F.Cu 4572
+            1455674 -1027226
+            1455674 -1076502
+            1497838 -1118666
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1413121 -997354
+            1442993 -1027226
+            1455674 -1027226
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1397762 -997354
+            1413121 -997354
+          )
+        )
+      )
+      (net /GND
+        (wire
+          (path F.Cu 4572
+            1382403 -1022754
+            1382403 -985617
+            1386151 -981869
+            1506236 -981869
+            1594358 -1069991
+            1594358 -1071118
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1397508 -1197864
+            1372661 -1173017
+            1372661 -1032496
+            1382403 -1022754
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1397762 -1022754
+            1382403 -1022754
+          )
+        )
+      )
+      (net /5V
+        (wire
+          (path F.Cu 4572
+            1397508 -1172464
+            1412867 -1172464
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1397762 -1048154
+            1397762 -1063513
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1397508 -1172464
+            1382148 -1157104
+            1382148 -1079127
+            1397762 -1063513
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1594358 -1096518
+            1618863 -1121023
+            1618863 -1188022
+            1584893 -1221992
+            1462395 -1221992
+            1412867 -1172464
+          )
+        )
+      )
+      (net /TX
+        (wire
+          (path F.Cu 4572
+            1397508 -1147064
+            1412867 -1147064
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1412867 -1147064
+            1478650 -1212847
+            1581105 -1212847
+            1609718 -1184234
+            1609718 -1137278
+            1594358 -1121918
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1524945 -1027226
+            1524945 -1052505
+            1594358 -1121918
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1531874 -1027226
+            1524945 -1027226
+          )
+        )
+      )
+      (net "Net-(J2-Pad2)"
+        (wire
+          (path F.Cu 4572
+            1497838 -1169466
+            1482479 -1169466
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1397508 -1121664
+            1434677 -1121664
+            1482479 -1169466
+          )
+        )
+      )
+      (net "Net-(J3-Pad2)"
+        (wire
+          (path F.Cu 4572
+            1497838 -1144066
+            1513197 -1144066
+          )
+        )
+        (wire
+          (path F.Cu 4572
+            1594358 -1147318
+            1516449 -1147318
+            1513197 -1144066
+          )
+        )
+      )
+    )
+  )
+)
